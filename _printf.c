@@ -6,7 +6,7 @@
  *
  * @format: character indetifier dd
  *
- * Return: numb of char printeddd 
+ * Return: numb of char printeddd
  */
 
 int _printf(const char *format, ...)
