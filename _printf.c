@@ -1,11 +1,12 @@
 #include "main.h"
 
+
 /**
- * _printf - function to print data
+ * _printf- func t print data ffff
  *
- * @format: char identifier
+ * @format: character indetifier dd
  *
- * Return: number of characters printed
+ * Return: numb of char printeddd 
  */
 
 int _printf(const char *format, ...)
@@ -19,7 +20,7 @@ int _printf(const char *format, ...)
 
 	va_start(args, format);
 
-	for (; *format != '\0'; format++)
+	while (*format != '\0')
 	{
 		if (*format == '%')
 		{
@@ -42,6 +43,8 @@ int _printf(const char *format, ...)
 			putchar(*format);
 			printed_characters++;
 		}
+
+		format++;
 	}
 
 	va_end(args);
